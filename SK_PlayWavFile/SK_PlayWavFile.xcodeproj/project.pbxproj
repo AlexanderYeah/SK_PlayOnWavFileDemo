@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11C7BEFC21CCDAE40051B3A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C7BEFB21CCDAE40051B3A6 /* AppDelegate.m */; };
+		11C7BEFF21CCDAE40051B3A6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C7BEFE21CCDAE40051B3A6 /* ViewController.m */; };
+		11C7BF0221CCDAE40051B3A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11C7BF0021CCDAE40051B3A6 /* Main.storyboard */; };
+		11C7BF0421CCDAE50051B3A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11C7BF0321CCDAE50051B3A6 /* Assets.xcassets */; };
+		11C7BF0721CCDAE50051B3A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11C7BF0521CCDAE50051B3A6 /* LaunchScreen.storyboard */; };
+		11C7BF0A21CCDAE50051B3A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C7BF0921CCDAE50051B3A6 /* main.m */; };
+		11C7BF1421CCDAE50051B3A6 /* SK_PlayWavFileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C7BF1321CCDAE50051B3A6 /* SK_PlayWavFileTests.m */; };
+		11C7BF1F21CCDAE50051B3A6 /* SK_PlayWavFileUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C7BF1E21CCDAE50051B3A6 /* SK_PlayWavFileUITests.m */; };
+		11C7BF2E21CCDB7D0051B3A6 /* AudioStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = 11C7BF2C21CCDB7C0051B3A6 /* AudioStreamer.m */; };
+		11C7BF3121CCDCF90051B3A6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C7BF3021CCDCF90051B3A6 /* AudioToolbox.framework */; };
+		11C7BF3321CCDD020051B3A6 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C7BF3221CCDD020051B3A6 /* CFNetwork.framework */; };
+		11C7BF3521CCDD3D0051B3A6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C7BF3421CCDD3D0051B3A6 /* UIKit.framework */; };
+		11C7BF3721CCDD450051B3A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C7BF3621CCDD450051B3A6 /* Foundation.framework */; };
+		11C7BF3921CCDD540051B3A6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C7BF3821CCDD540051B3A6 /* CoreGraphics.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		11C7BF1021CCDAE50051B3A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11C7BEEF21CCDAE30051B3A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11C7BEF621CCDAE40051B3A6;
+			remoteInfo = SK_PlayWavFile;
+		};
+		11C7BF1B21CCDAE50051B3A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11C7BEEF21CCDAE30051B3A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11C7BEF621CCDAE40051B3A6;
+			remoteInfo = SK_PlayWavFile;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11C7BEF721CCDAE40051B3A6 /* SK_PlayWavFile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SK_PlayWavFile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11C7BEFA21CCDAE40051B3A6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		11C7BEFB21CCDAE40051B3A6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		11C7BEFD21CCDAE40051B3A6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		11C7BEFE21CCDAE40051B3A6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		11C7BF0121CCDAE40051B3A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		11C7BF0321CCDAE50051B3A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		11C7BF0621CCDAE50051B3A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		11C7BF0821CCDAE50051B3A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11C7BF0921CCDAE50051B3A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		11C7BF0F21CCDAE50051B3A6 /* SK_PlayWavFileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SK_PlayWavFileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11C7BF1321CCDAE50051B3A6 /* SK_PlayWavFileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SK_PlayWavFileTests.m; sourceTree = "<group>"; };
+		11C7BF1521CCDAE50051B3A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11C7BF1A21CCDAE50051B3A6 /* SK_PlayWavFileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SK_PlayWavFileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		11C7BF1E21CCDAE50051B3A6 /* SK_PlayWavFileUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SK_PlayWavFileUITests.m; sourceTree = "<group>"; };
+		11C7BF2021CCDAE50051B3A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11C7BF2C21CCDB7C0051B3A6 /* AudioStreamer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioStreamer.m; sourceTree = "<group>"; };
+		11C7BF2D21CCDB7C0051B3A6 /* AudioStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioStreamer.h; sourceTree = "<group>"; };
+		11C7BF3021CCDCF90051B3A6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		11C7BF3221CCDD020051B3A6 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		11C7BF3421CCDD3D0051B3A6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		11C7BF3621CCDD450051B3A6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		11C7BF3821CCDD540051B3A6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11C7BEF421CCDAE40051B3A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11C7BF3921CCDD540051B3A6 /* CoreGraphics.framework in Frameworks */,
+				11C7BF3721CCDD450051B3A6 /* Foundation.framework in Frameworks */,
+				11C7BF3521CCDD3D0051B3A6 /* UIKit.framework in Frameworks */,
+				11C7BF3321CCDD020051B3A6 /* CFNetwork.framework in Frameworks */,
+				11C7BF3121CCDCF90051B3A6 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11C7BF0C21CCDAE50051B3A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11C7BF1721CCDAE50051B3A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11C7BEEE21CCDAE30051B3A6 = {
+			isa = PBXGroup;
+			children = (
+				11C7BEF921CCDAE40051B3A6 /* SK_PlayWavFile */,
+				11C7BF1221CCDAE50051B3A6 /* SK_PlayWavFileTests */,
+				11C7BF1D21CCDAE50051B3A6 /* SK_PlayWavFileUITests */,
+				11C7BEF821CCDAE40051B3A6 /* Products */,
+				11C7BF2F21CCDCF80051B3A6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		11C7BEF821CCDAE40051B3A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11C7BEF721CCDAE40051B3A6 /* SK_PlayWavFile.app */,
+				11C7BF0F21CCDAE50051B3A6 /* SK_PlayWavFileTests.xctest */,
+				11C7BF1A21CCDAE50051B3A6 /* SK_PlayWavFileUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11C7BEF921CCDAE40051B3A6 /* SK_PlayWavFile */ = {
+			isa = PBXGroup;
+			children = (
+				11C7BF2D21CCDB7C0051B3A6 /* AudioStreamer.h */,
+				11C7BF2C21CCDB7C0051B3A6 /* AudioStreamer.m */,
+				11C7BEFA21CCDAE40051B3A6 /* AppDelegate.h */,
+				11C7BEFB21CCDAE40051B3A6 /* AppDelegate.m */,
+				11C7BEFD21CCDAE40051B3A6 /* ViewController.h */,
+				11C7BEFE21CCDAE40051B3A6 /* ViewController.m */,
+				11C7BF0021CCDAE40051B3A6 /* Main.storyboard */,
+				11C7BF0321CCDAE50051B3A6 /* Assets.xcassets */,
+				11C7BF0521CCDAE50051B3A6 /* LaunchScreen.storyboard */,
+				11C7BF0821CCDAE50051B3A6 /* Info.plist */,
+				11C7BF0921CCDAE50051B3A6 /* main.m */,
+			);
+			path = SK_PlayWavFile;
+			sourceTree = "<group>";
+		};
+		11C7BF1221CCDAE50051B3A6 /* SK_PlayWavFileTests */ = {
+			isa = PBXGroup;
+			children = (
+				11C7BF1321CCDAE50051B3A6 /* SK_PlayWavFileTests.m */,
+				11C7BF1521CCDAE50051B3A6 /* Info.plist */,
+			);
+			path = SK_PlayWavFileTests;
+			sourceTree = "<group>";
+		};
+		11C7BF1D21CCDAE50051B3A6 /* SK_PlayWavFileUITests */ = {
+			isa = PBXGroup;
+			children = (
+				11C7BF1E21CCDAE50051B3A6 /* SK_PlayWavFileUITests.m */,
+				11C7BF2021CCDAE50051B3A6 /* Info.plist */,
+			);
+			path = SK_PlayWavFileUITests;
+			sourceTree = "<group>";
+		};
+		11C7BF2F21CCDCF80051B3A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11C7BF3821CCDD540051B3A6 /* CoreGraphics.framework */,
+				11C7BF3621CCDD450051B3A6 /* Foundation.framework */,
+				11C7BF3421CCDD3D0051B3A6 /* UIKit.framework */,
+				11C7BF3221CCDD020051B3A6 /* CFNetwork.framework */,
+				11C7BF3021CCDCF90051B3A6 /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11C7BEF621CCDAE40051B3A6 /* SK_PlayWavFile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11C7BF2321CCDAE50051B3A6 /* Build configuration list for PBXNativeTarget "SK_PlayWavFile" */;
+			buildPhases = (
+				11C7BEF321CCDAE40051B3A6 /* Sources */,
+				11C7BEF421CCDAE40051B3A6 /* Frameworks */,
+				11C7BEF521CCDAE40051B3A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SK_PlayWavFile;
+			productName = SK_PlayWavFile;
+			productReference = 11C7BEF721CCDAE40051B3A6 /* SK_PlayWavFile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		11C7BF0E21CCDAE50051B3A6 /* SK_PlayWavFileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11C7BF2621CCDAE50051B3A6 /* Build configuration list for PBXNativeTarget "SK_PlayWavFileTests" */;
+			buildPhases = (
+				11C7BF0B21CCDAE50051B3A6 /* Sources */,
+				11C7BF0C21CCDAE50051B3A6 /* Frameworks */,
+				11C7BF0D21CCDAE50051B3A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11C7BF1121CCDAE50051B3A6 /* PBXTargetDependency */,
+			);
+			name = SK_PlayWavFileTests;
+			productName = SK_PlayWavFileTests;
+			productReference = 11C7BF0F21CCDAE50051B3A6 /* SK_PlayWavFileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		11C7BF1921CCDAE50051B3A6 /* SK_PlayWavFileUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11C7BF2921CCDAE50051B3A6 /* Build configuration list for PBXNativeTarget "SK_PlayWavFileUITests" */;
+			buildPhases = (
+				11C7BF1621CCDAE50051B3A6 /* Sources */,
+				11C7BF1721CCDAE50051B3A6 /* Frameworks */,
+				11C7BF1821CCDAE50051B3A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11C7BF1C21CCDAE50051B3A6 /* PBXTargetDependency */,
+			);
+			name = SK_PlayWavFileUITests;
+			productName = SK_PlayWavFileUITests;
+			productReference = 11C7BF1A21CCDAE50051B3A6 /* SK_PlayWavFileUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11C7BEEF21CCDAE30051B3A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = AlexanderYeah;
+				TargetAttributes = {
+					11C7BEF621CCDAE40051B3A6 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					11C7BF0E21CCDAE50051B3A6 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 11C7BEF621CCDAE40051B3A6;
+					};
+					11C7BF1921CCDAE50051B3A6 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 11C7BEF621CCDAE40051B3A6;
+					};
+				};
+			};
+			buildConfigurationList = 11C7BEF221CCDAE30051B3A6 /* Build configuration list for PBXProject "SK_PlayWavFile" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 11C7BEEE21CCDAE30051B3A6;
+			productRefGroup = 11C7BEF821CCDAE40051B3A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11C7BEF621CCDAE40051B3A6 /* SK_PlayWavFile */,
+				11C7BF0E21CCDAE50051B3A6 /* SK_PlayWavFileTests */,
+				11C7BF1921CCDAE50051B3A6 /* SK_PlayWavFileUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11C7BEF521CCDAE40051B3A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11C7BF0721CCDAE50051B3A6 /* LaunchScreen.storyboard in Resources */,
+				11C7BF0421CCDAE50051B3A6 /* Assets.xcassets in Resources */,
+				11C7BF0221CCDAE40051B3A6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11C7BF0D21CCDAE50051B3A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11C7BF1821CCDAE50051B3A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11C7BEF321CCDAE40051B3A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11C7BEFF21CCDAE40051B3A6 /* ViewController.m in Sources */,
+				11C7BF0A21CCDAE50051B3A6 /* main.m in Sources */,
+				11C7BEFC21CCDAE40051B3A6 /* AppDelegate.m in Sources */,
+				11C7BF2E21CCDB7D0051B3A6 /* AudioStreamer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11C7BF0B21CCDAE50051B3A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11C7BF1421CCDAE50051B3A6 /* SK_PlayWavFileTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11C7BF1621CCDAE50051B3A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11C7BF1F21CCDAE50051B3A6 /* SK_PlayWavFileUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11C7BF1121CCDAE50051B3A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11C7BEF621CCDAE40051B3A6 /* SK_PlayWavFile */;
+			targetProxy = 11C7BF1021CCDAE50051B3A6 /* PBXContainerItemProxy */;
+		};
+		11C7BF1C21CCDAE50051B3A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11C7BEF621CCDAE40051B3A6 /* SK_PlayWavFile */;
+			targetProxy = 11C7BF1B21CCDAE50051B3A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		11C7BF0021CCDAE40051B3A6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11C7BF0121CCDAE40051B3A6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		11C7BF0521CCDAE50051B3A6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11C7BF0621CCDAE50051B3A6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		11C7BF2121CCDAE50051B3A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		11C7BF2221CCDAE50051B3A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		11C7BF2421CCDAE50051B3A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7DC4XMJV5E;
+				INFOPLIST_FILE = SK_PlayWavFile/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "AlexanderYeah.GCD-dispatch-source-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		11C7BF2521CCDAE50051B3A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7DC4XMJV5E;
+				INFOPLIST_FILE = SK_PlayWavFile/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "AlexanderYeah.GCD-dispatch-source-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		11C7BF2721CCDAE50051B3A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SK_PlayWavFileTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "AlexanderYeah.SK-PlayWavFileTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SK_PlayWavFile.app/SK_PlayWavFile";
+			};
+			name = Debug;
+		};
+		11C7BF2821CCDAE50051B3A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SK_PlayWavFileTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "AlexanderYeah.SK-PlayWavFileTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SK_PlayWavFile.app/SK_PlayWavFile";
+			};
+			name = Release;
+		};
+		11C7BF2A21CCDAE50051B3A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SK_PlayWavFileUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "AlexanderYeah.SK-PlayWavFileUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SK_PlayWavFile;
+			};
+			name = Debug;
+		};
+		11C7BF2B21CCDAE50051B3A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SK_PlayWavFileUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "AlexanderYeah.SK-PlayWavFileUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SK_PlayWavFile;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11C7BEF221CCDAE30051B3A6 /* Build configuration list for PBXProject "SK_PlayWavFile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11C7BF2121CCDAE50051B3A6 /* Debug */,
+				11C7BF2221CCDAE50051B3A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11C7BF2321CCDAE50051B3A6 /* Build configuration list for PBXNativeTarget "SK_PlayWavFile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11C7BF2421CCDAE50051B3A6 /* Debug */,
+				11C7BF2521CCDAE50051B3A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11C7BF2621CCDAE50051B3A6 /* Build configuration list for PBXNativeTarget "SK_PlayWavFileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11C7BF2721CCDAE50051B3A6 /* Debug */,
+				11C7BF2821CCDAE50051B3A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11C7BF2921CCDAE50051B3A6 /* Build configuration list for PBXNativeTarget "SK_PlayWavFileUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11C7BF2A21CCDAE50051B3A6 /* Debug */,
+				11C7BF2B21CCDAE50051B3A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 11C7BEEF21CCDAE30051B3A6 /* Project object */;
+}
